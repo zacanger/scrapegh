@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "./node node_modules/.bin/eslint -c .eslintrc src/**",
-    "start": ""
+    "start": "node ./src"
   },
   "repository": {
     "type": "git",
