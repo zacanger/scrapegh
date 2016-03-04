@@ -1,7 +1,7 @@
 {
-  "name": "foo",
+  "name": "scrapegh",
   "version": "0.1.0",
-  "description": "bar quux baz",
+  "description": "cli utility for scraping github",
   "main": "",
   "scripts": {
     "test": "",
@@ -9,11 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zacanger/foo.git"
+    "url": "https://github.com/zacanger/scrapegh.git"
   },
   "keywords": [
-    "",
-    ""
+    "github",
+    "scraper",
+    "scraping",
+    "git",
+    "scrape"
   ],
   "author": {
     "name": "Zac Anger",
@@ -26,3 +29,4 @@
   },
   "devDependencies": {}
 }
+
