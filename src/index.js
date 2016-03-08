@@ -25,7 +25,6 @@ else {
   url = user
 }
 
-
 gs(url, function(err, data){
   if(err){
     console.error(err)
