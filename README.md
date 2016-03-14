@@ -14,6 +14,8 @@ scrapegh username followers
 scrapegh username following
 ```
 
+note: options that are empty (like if there's nothing in `activity`) will probably just throw errors right now.
+
 future:
 
 * features
