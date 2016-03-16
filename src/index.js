@@ -9,6 +9,10 @@ var gs        = require('github-scraper')
   , following = '/following'
   , url
 
+if(!user){
+  console.log('please provide a username, and optionally a query\nerror:')
+}
+
 if(query && query == 'repos'){
   url = user + repos
 }
@@ -29,6 +33,6 @@ gs(url, function(err, data){
   if(err){
     console.error(err)
   }
-  console.log(data)
+  console.log(JSON.stringify(data, null, 2))
 })
 
