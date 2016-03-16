@@ -1,10 +1,10 @@
 ## scrapegh
 
-this is a little command-line utility to scrape github for things!
+This is a little command-line utility to scrape Github for useful things!
 
-it's essentially just a wrapper around [this](https://github.com/nelsonic/github-scraper)
+It's essentially just a wrapper around [this](https://github.com/nelsonic/github-scraper).
 
-usage:
+Usage:
 
 ```
 scrapegh username
@@ -14,12 +14,21 @@ scrapegh username followers
 scrapegh username following
 ```
 
-note: options that are empty (like if there's nothing in `activity`) will probably just throw errors right now.
+It'll give you what you've asked for, in nice, pretty JSON.
 
-future:
+Try it with [jq](https://stedolan.github.io/jq/): `scrapegh zacanger following | jq .`
 
-* features
-* docs
-* usability
-* basically everything
+Or with [ccat](https://github.com/jingweno/ccat): `scrapegh r-walsh | ccat`.
+
+Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordyn repos | prettyjson`
+
+Notes: Non-exsistent users will get a 404.  `activity` seems broken right now. Working on that.
+
+The Future:
+  * Features
+  * Usability
+  * Decent docs
+  * Tests
+  * Using all of `github-scraper`'s functionality in this tool.
+  * Basically everything
 
