@@ -14,6 +14,7 @@ scrapegh username repos
 scrapegh username activity
 scrapegh username followers
 scrapegh username following
+scrapegh username starred
 ```
 
 It'll give you what you've asked for, in nice, pretty JSON.
@@ -24,7 +25,9 @@ Or with [ccat](https://github.com/jingweno/ccat): `scrapegh r-walsh | ccat`.
 
 Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordyn repos | prettyjson`
 
-Notes: Non-exsistent users will get a 404.  `activity` seems broken right now. Working on that.
+Notes:
+  * Non-existent users will get a 404.
+  * `activity` is broken right now if any possible 'activity' is missing.
 
 The Future:
   * Features
