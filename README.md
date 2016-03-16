@@ -4,6 +4,8 @@ This is a little command-line utility to scrape Github for useful things!
 
 It's essentially just a wrapper around [this](https://github.com/nelsonic/github-scraper).
 
+Installation: `npm i -g scrapegh`.
+
 Usage:
 
 ```
