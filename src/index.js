@@ -38,12 +38,26 @@ else if(user || query){
   }
 
   // gs returns objects; we want json
-  gs(url, function(err, data){
+  gs(url, (err, data) => {
     if(err){
       console.error(err)
     }
     console.log(JSON.stringify(data, null, 2))
+    if(data.next_page){
+      gs(data.next_page, (err, data2) => {
+        console.log(JSON.stringify(data2, null, 2))
+        if(data.next_page){
+          gs(data.next_page, (err, data3) => {
+            console.log(JSON.stringify(data3, null, 2))
+            // etc. gotta decide whether we should recursively
+            // log out data forevs, mention to the user that there's
+            // a lot more out there, or... what, basically.
+            // so this is gross and definitely not permanent.
+
+          })
+        }
+      })
+    }
   })
 
 }
-
