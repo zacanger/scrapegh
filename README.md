@@ -27,7 +27,7 @@ Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordy
 
 Notes:
   * Non-existent users will get a 404.
-  * `activity` is broken right now if any possible 'activity' is missing.
+  * Need a much better way to get rid of the banner text.
 
 The Future:
   * Features

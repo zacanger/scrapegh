@@ -1,11 +1,10 @@
 {
   "name": "scrapegh",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "cli utility for scraping github",
-  "main": "src/index.js",
+  "main": "./index.js",
   "scripts": {
-    "lint": "./node node_modules/.bin/eslint -c .eslintrc src/**",
-    "start": "node ./src"
+    "start": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,7 @@
     "scrape"
   ],
   "preferGlobal": true,
-  "bin": "./src/index.js",
+  "bin": "./index.js",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -27,10 +26,8 @@
   },
   "license": "WTFPL",
   "dependencies": {
-    "github-scraper": "^3.0.23"
+    "github-scraper": "^3.1.0"
   },
   "devDependencies": {
-    "eslint": "^2.2.0"
   }
 }
-
