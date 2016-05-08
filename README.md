@@ -11,25 +11,22 @@ Usage:
 ```
 scrapegh username
 scrapegh username repos
-scrapegh username activity
 scrapegh username followers
 scrapegh username following
 scrapegh username starred
+scrapegh username reponame
 ```
 
-It'll give you what you've asked for, in nice, pretty JSON.
+* It'll give you what you've asked for, in nice, pretty JSON.
+* Try it with [jq](https://stedolan.github.io/jq/): `scrapegh zacanger following | jq .`
+* Or with [ccat](https://github.com/jingweno/ccat): `scrapegh r-walsh | ccat`.
+* Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordyn repos | prettyjson`
+* Or just on its own: `scrapegh pharaoh-js pharaoh`
 
-Try it with [jq](https://stedolan.github.io/jq/): `scrapegh zacanger following | jq .`
 
-Or with [ccat](https://github.com/jingweno/ccat): `scrapegh r-walsh | ccat`.
-
-Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordyn repos | prettyjson`
-
-Notes:
-  * Non-existent users will get a 404.
-  * Need a much better way to get rid of the banner text.
-
-The Future:
+* To Do:
+  * Better message (instead of 404) for non-existent users
+  * Better way to get rid of the banner text
   * Features
   * Usability
   * Decent docs

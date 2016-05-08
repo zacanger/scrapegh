@@ -35,6 +35,8 @@ else if (user || query) {
     url = user + following
   } else if (query == 'starred') {
     url = starred + user
+  } else if (typeof query === 'string') {
+    url = `${user}/${query}`
   } else if (user) {
     url = user
   }
@@ -50,9 +52,10 @@ else if (user || query) {
         out.write('\n' + JSON.stringify(data2, null, 2) + '\n\n')
         // need to decide what the limit will be, here
         if (data.next_page) {
-          console.log('\nplease visit the url for more pages of data!\n\n')
+          out.write('\nplease visit the url for more pages of data!\n\n')
         }
       })
     }
   })
 }
+
