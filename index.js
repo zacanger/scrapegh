@@ -36,7 +36,8 @@ if (user == '-h' || user == '--help') {
     scrapegh username following
     scrapegh username starred
     scrapegh username reponame
-            `)
+
+`)
 }
 
 else if (user || query) {
