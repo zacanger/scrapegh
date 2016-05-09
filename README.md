@@ -17,6 +17,7 @@ scrapegh username starred
 scrapegh username reponame
 ```
 
+* You can see the above with `scrapegh -h`.
 * It'll give you what you've asked for, in nice, pretty JSON.
 * Try it with [jq](https://stedolan.github.io/jq/): `scrapegh zacanger following | jq .`
 * Or with [ccat](https://github.com/jingweno/ccat): `scrapegh r-walsh | ccat`.
