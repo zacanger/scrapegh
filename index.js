@@ -3,7 +3,8 @@
 'use strict'
 
 const
-  gs        = require('github-scraper')
+  fs        = require('fs')
+, gs        = require('github-scraper')
 , user      = process.argv[2]
 , query     = process.argv[3]
 , out       = process.stdout
@@ -24,6 +25,10 @@ if (!user) {
 // right now, only one query is processed. i'll work on this
 if (process.argv[4]) {
   out.write('\none query at a time, please!\n\n')
+}
+
+if (user == '-h' || user == '--help') {
+  fs.createReadStream('./help.md').pipe(out)
 }
 
 else if (user || query) {
