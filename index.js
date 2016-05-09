@@ -3,8 +3,7 @@
 'use strict'
 
 const
-  fs        = require('fs')
-, gs        = require('github-scraper')
+  gs        = require('github-scraper')
 , user      = process.argv[2]
 , query     = process.argv[3]
 , out       = process.stdout
@@ -28,7 +27,16 @@ if (process.argv[4]) {
 }
 
 if (user == '-h' || user == '--help') {
-  fs.createReadStream('./help.md').pipe(out)
+  out.write(`
+    scrapegh usage:
+
+    scrapegh username
+    scrapegh username repos
+    scrapegh username followers
+    scrapegh username following
+    scrapegh username starred
+    scrapegh username reponame
+            `)
 }
 
 else if (user || query) {
