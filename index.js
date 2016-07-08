@@ -14,7 +14,7 @@ const
 
 let url
 
-console.log = function(){}
+console.log = () => {}
 
 // no results
 if (!user) {
@@ -60,10 +60,10 @@ else if (user || query) {
     if (err) {
       console.error(err)
     }
-    out.write('\n' + JSON.stringify(data, null, 2) + '\n\n')
+    out.write(JSON.stringify(data, null, 2) + '\n')
     if (data.next_page) {
       gs(data.next_page, (err, data2) => {
-        out.write('\n' + JSON.stringify(data2, null, 2) + '\n\n')
+        out.write(JSON.stringify(data2, null, 2) + '\n')
         // need to decide what the limit will be, here
         if (data.next_page) {
           out.write('\nplease visit the url for more pages of data!\n\n')
@@ -72,4 +72,3 @@ else if (user || query) {
     }
   })
 }
-

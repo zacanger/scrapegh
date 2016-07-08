@@ -1,8 +1,16 @@
 {
   "name": "scrapegh",
-  "version": "0.2.2",
   "description": "cli utility for scraping github",
+  "version": "0.2.3",
+  "author": {
+    "name": "Zac Anger",
+    "email": "zac@zacanger.com",
+    "url": "http://zacanger.com"
+  },
+  "license": "WTFPL",
   "main": "./index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
   "scripts": {
     "start": "./index.js"
   },
@@ -11,24 +19,14 @@
     "url": "https://github.com/zacanger/scrapegh.git"
   },
   "keywords": [
-    "github",
-    "scraper",
-    "scraping",
     "git",
-    "scrape"
+    "github",
+    "scrape",
+    "scraper",
+    "scraping"
   ],
-  "preferGlobal": true,
-  "bin": "./index.js",
-  "author": {
-    "name": "Zac Anger",
-    "email": "zac@zacanger.com",
-    "url": "http://zacanger.com"
-  },
-  "license": "WTFPL",
   "dependencies": {
-    "github-scraper": "^3.1.0"
+    "github-scraper": "ronakjain90/github-scraper"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
-
