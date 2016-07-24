@@ -24,8 +24,7 @@ scrapegh username reponame
 * Or with [prettyjson](https://www.npmjs.com/package/prettyjson): `scrapegh geordyn repos | prettyjson`
 * Or just on its own: `scrapegh pharaoh-js pharaoh`
 
-
-* To Do:
+* To do:
   * Better message (instead of 404) for non-existent users
   * Better way to get rid of the banner text
   * Features
@@ -34,4 +33,3 @@ scrapegh username reponame
   * Tests
   * Using all of `github-scraper`'s functionality in this tool.
   * Basically everything
-

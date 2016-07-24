@@ -1,7 +1,7 @@
 {
   "name": "scrapegh",
   "description": "cli utility for scraping github",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -19,11 +19,13 @@
     "url": "https://github.com/zacanger/scrapegh.git"
   },
   "keywords": [
+    "gh",
     "git",
     "github",
     "scrape",
     "scraper",
-    "scraping"
+    "scraping",
+    "web-scraper"
   ],
   "dependencies": {
     "github-scraper": "ronakjain90/github-scraper"
