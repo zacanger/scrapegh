@@ -14,6 +14,11 @@ const
 
 let url
 
+if (module.parent) {
+  console.log('scrapegh should only be used from the command-line')
+  process.exit(0)
+}
+
 console.log = () => {}
 
 // no results

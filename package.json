@@ -1,7 +1,7 @@
 {
   "name": "scrapegh",
   "description": "cli utility for scraping github",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -14,10 +14,12 @@
   "scripts": {
     "start": "./index.js"
   },
+  "homepage": "https://github.com/zacanger/scrapegh#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/zacanger/scrapegh.git"
   },
+  "bugs": "https://github.com/zacanger/scrapegh/issues",
   "keywords": [
     "gh",
     "git",
