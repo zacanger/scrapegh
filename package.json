@@ -1,7 +1,7 @@
 {
   "name": "scrapegh",
-  "description": "cli utility for scraping github",
-  "version": "0.2.6",
+  "description": "DEPRECATED cli utility for scraping github",
+  "version": "0.3.0",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",

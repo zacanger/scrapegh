@@ -1,5 +1,12 @@
 ## scrapegh
 
+## DEPRECATED
+
+GitHub's markup and CSS keep changing, and it's not worth it to me to keep this
+updated, since that means constantly patching deps. Sorry, folks.
+
+--------
+
 This is a little command-line utility to scrape Github for useful things!
 
 It's essentially just a wrapper around [this](https://github.com/nelsonic/github-scraper).
